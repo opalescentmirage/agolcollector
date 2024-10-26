@@ -16,6 +16,26 @@
      height: 100%;
      width: 100%;
     }
+
+    .addRecordBtn {
+  position: absolute;
+  z-index: 10;
+  top: 10px;
+  right: 10px;
+  background-color: #0079c1;
+  color: white;
+  padding: 8px 16px;
+  border: none;
+  border-radius: 4px;
+  font-size: 14px;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.addRecordBtn:hover {
+  background-color: #005a87;
+}
+
    </style>
 
    <link rel="stylesheet" href="https://js.arcgis.com/4.26/esri/themes/light/main.css" />
@@ -61,9 +81,9 @@
         view: view
         });
         // adding widget
-        // the top right corner of the view
+        // the top left corner of the view
         view.ui.add(searchWidget, {
-        position: "top-right",
+        position: "top-left",
         index: 2
         });
 
@@ -72,6 +92,7 @@
 
   </head>
   <body>
+    <a href="https://survey123.arcgis.com/share/55a1dcb95cfe435a8b16cebfd83afef4"target="_blank" class="addRecordBtn">Add Record</a>
     <div id="viewDiv"></div>
   </body>
 </html>
